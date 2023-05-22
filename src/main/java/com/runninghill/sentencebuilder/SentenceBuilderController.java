@@ -51,7 +51,6 @@ public class SentenceBuilderController {
         URI location = getLocation(newSentence);
         return ResponseEntity.created(location).build();
     }
-
      URI getLocation(Sentence sentence) {
         return ServletUriComponentsBuilder
                 .fromCurrentRequest()
