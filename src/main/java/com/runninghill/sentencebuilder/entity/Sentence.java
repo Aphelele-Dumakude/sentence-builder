@@ -18,7 +18,4 @@ public class Sentence {
 
     @Column(name = "sentence")
     private String sentence;
-
-    @ManyToOne(fetch = FetchType.LAZY)
-    private User user;
 }
